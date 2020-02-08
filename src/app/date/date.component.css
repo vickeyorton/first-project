@@ -1,0 +1,13 @@
+.component-border{
+    border: 1px solid black;
+    margin: 5px;
+}
+.center{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.date-bg{
+    background: black;
+    color:white;
+}
