@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 import { DateComponent } from './date/date.component';
+import { LoopComponent } from './loop/loop.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloWorldComponent,
-    DateComponent
+    DateComponent,
+    LoopComponent
   ],
   imports: [
     BrowserModule,
