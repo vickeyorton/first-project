@@ -9,9 +9,15 @@ import { User } from './user.model';
 export class LoopComponent implements OnInit {
 
   @Input('user') user:User;
+  isToggle : boolean = true;
+  
   constructor() {
     
    }
+
+  toggleFunction(){
+    this.isToggle = !this.isToggle;
+  }
 
   ngOnInit() {
     this.user = {

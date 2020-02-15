@@ -1,10 +1,14 @@
 <div class="component-border">
-    <p>{{user.name}}</p>
-    <p>{{user.title}}</p>
-    <p>{{user.address}}</p>
-    <div *ngIf = "user.Phone.length">
-        <p>Phone:</p>
-        <p *ngFor = "let phoneNumber of user.Phone">{{phoneNumber}}</p>
+    <button *ngIf = "isToggle" (click)="toggleFunction()">Show Info</button>
+    <button *ngIf = "!isToggle" (click)="toggleFunction()">Hide Info</button>
+    <div *ngIf = "!isToggle">
+        <p class="name">{{user.name}}</p>
+        <p class="title">{{user.title}}</p>
+        <p>{{user.address}}</p>
+        <div *ngIf = "user.Phone.length">
+            <p>Phone:</p>
+            <p *ngFor = "let phoneNumber of user.Phone">{{phoneNumber}}</p>
+        </div>
     </div>
     
 </div>
